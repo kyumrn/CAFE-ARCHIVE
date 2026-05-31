@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAFE ARCHIVE</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+[class*="c_"] {
+    float: left;
+    padding: 10px;
+}
+[class*="c_"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    .c_m_1 {width: 8.33%;}
+    .c_m_2 {width: 16.66%;}
+    .c_m_3 {width: 25%;}
+    .c_m_4 {width: 33.33%;}
+    .c_m_5 {width: 41.66%;}
+    .c_m_6 {width: 50%;}
+    .c_m_7 {width: 58.33%;}
+    .c_m_8 {width: 66.66%;}
+    .c_m_9 {width: 75%;}
+    .c_m_10 {width: 83.33%;}
+    .c_m_11 {width: 91.66%;}
+    .c_m_12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .c_1 {width: 8.33%;}
+    .c_2 {width: 16.66%;}
+    .c_3 {width: 25%;}
+    .c_4 {width: 33.33%;}
+    .c_5 {width: 41.66%;}
+    .c_6 {width: 50%;}
+    .c_7 {width: 58.33%;}
+    .c_8 {width: 66.66%;}
+    .c_9 {width: 75%;}
+    .c_10 {width: 83.33%;}
+    .c_11 {width: 91.66%;}
+    .c_12 {width: 100%;}
+}
+body{
+    font-family: "맑은 고딕";
+    background-color:#d8b998;
+    color:#222;
+    padding:20px;
+}
+#wrap{
+    max-width: 1500px;
+    margin:auto;
+}
+header{
+    border: double 12px #7d5a44;
+    padding:10px;
+    margin-bottom:10px;
+    background-color:#ede0d2;
+    border-radius: 15px;
+}
+header img{
+    padding-bottom: 30px;
+}
+
+header nav ul {
+    list-style:none;
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+header nav li {
+    display:inline;
+    font-size:28px;
+    margin:0 20px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#4a342a;
+}
+
+header nav a:hover{
+    color:#b8894f;
+}
+
+.active{
+    background: linear-gradient(to top, #e2ceb3 50%, transparent 50%);
+    padding: 0 6px;
+}
+
+aside {
+    border: double 12px #7d5a44;
+    border-right: none;
+    background-color: #fff5eb;
+    min-height: 600px;
+    width: 250px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 30px 20px;
+    margin: 0;
+}
+aside ul li {
+    font-size: 18px;  
+    font-weight: bold;
+    color: #4E3629;     
+    margin-bottom:30px;  
+}
+aside ul ul {
+    list-style: none;
+    padding-left: 20px;  
+    margin-top: 15px;      
+}
+aside ul ul li {
+    font-size: 20px;       
+    margin-bottom: 12px;   
+}
+aside ul ul li a {
+    text-decoration: none;
+    color: #555555;       
+}
+aside ul ul li a:hover {
+    color: #915F38;       
+    font-weight: bold;
+}
+main {
+    overflow: hidden;
+}
+section{
+    border: double 12px #7d5a44;
+    border-left: dashed 5px #7d5a44;
+    background-color:#fff5eb;
+    min-height:600px;
+    padding:20px;
+    border-radius: 15px;
+}
+
+.top_area{
+    margin-bottom:40px;
+    overflow: hidden;
+}
+
+.cafe_img{
+    text-align:center;
+}
+
+.info_box {
+    padding: 30px;       
+    max-width: 600px;    
+}
+.info_box h2 {
+    font-size: 30px;       
+    font-weight: 700;
+    color: #4E3629;         
+    margin-bottom: 16px;  
+    position: relative;
+}
+.info_box p {
+    font-size: 19px;         
+    line-height: 1.8;        
+    color: #6e5445;        
+    text-align: justify;      
+    margin: 0;
+}
+
+.bottom_area{
+    margin-top:0px;
+    overflow: hidden;
+}
+.cafe_info_container {
+    padding: 20px;
+    max-width: 500px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.cafe_info_container .info_title {
+    font-size: 28px;       
+    font-weight: 700;
+    color: #4E3629;       
+    margin-bottom: 20px;  
+    margin-top: 0;
+}
+.info_details {
+    margin: 0;
+    padding: 0;
+}
+.info_details dt {
+    font-size: 20px;      
+    font-weight: 600;
+    color: #4E3629;
+    margin-top: 30px;      
+}
+
+.info_details dd {
+    font-size: 18px;       
+    color: #6e5445;    
+    margin-left: 50px;   
+    margin-top: 5px;   
+    margin-bottom: 15px;   
+}
+
+.cafe2_img {
+    width: 100%;     
+    max-width: 450px;  
+    text-align: center;
+    margin: 20px auto; 
+}
+footer{
+    color: #715345;
+    border:none;
+    margin-top:10px;
+    padding:20px;
+    background-color:#caac8c;
+    border-radius: 15px;
+}
+
+footer ul{
+    list-style-type: none;
+    font-size:14px;
+    line-height:1.7;
+}
+</style>
+</head>
+
+<body>
+
+<div id="wrap">
+    <header>
+        <a href="index.html"><img src="logo.jpg"></a>
+        <nav>
+            <ul>
+                <li><a href="mood.html">MOOD</a></li>
+                <li>|</li>
+                <li><a href="view.html">VIEW</a></li>
+                <li>|</li>
+                <li><a href="dessert.html">DESSERT</a></li>
+                <li>|</li>
+                <li><a href="unique.html">UNIQUE</a></li>
+                <li>|</li>
+                <li class="active"><a href="midnight.html">MIDNIGHT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="c_4 c_m_12">
+        <ul>
+            <li>
+                <strong>서울</strong>
+                <ul>
+                    <li><a href="https://naver.me/5r9zBrcR" target="_blank">더블유오앤</a></li>
+                    <li><a href="https://naver.me/FO9oPOLC" target="_blank">삼옥</a></li>
+                    <li><a href="https://naver.me/xrSQBKFH" target="_blank">논오프</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>경기도</strong>
+                <ul>
+                    <li><a href="https://naver.me/GPdZ9dac" target="_blank">DDNB</a></li>
+                    <li><a href="https://naver.me/5tJtrXym" target="_blank">스퀘어81</a></li>
+                    <li><a href="https://naver.me/GtURYHtK" target="_blank">르돌치1946</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>가천대학교 근처</strong>
+                <ul>
+                    <li><a href="https://naver.me/GwpMNzZL" target="_blank">포러데이</a></li>
+                    <li><a href="https://naver.me/xWTnbCCj" target="_blank">새벽카페 호르</a></li>
+                    <li><a href="https://naver.me/5wWeoLul" target="_blank">석담 카페 포나인</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+
+        <section class="c_8 c_m_12">
+            <div class="top_area">
+                <div class="c_4 c_m_12">
+                    <div class="cafe_img">
+                        <img src="midnightcafe1.jpg">
+                    </div>
+                </div>
+                <div class="c_8 c_m_12">
+                    <div class="info_box">
+                        <h2>DDNB 일산본점</h2>
+                        <p>건강과 여유가 균형을 이루는 라이프스타일을 제안하는 브런치 & 디저트 카페입니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom_area">
+
+                <div class="c_7 c_m_12">
+                    <div class="cafe_info_container">
+                        <h3 class="info_title">카페 정보</h3>
+                        <dl class="info_details">
+                            <dt>영업시간 :</dt>
+                                <dd>07:00 - 다음 날 03:00</dd>
+                            <dt>위치 :</dt>
+                                <dd>경기 고양시 일산동구 장항동 855</dd>
+                            <dt>주차 :</dt>
+                               <dd>3시간 주차 무료</dd>
+                            <dt>전화번호 :</dt>
+                                <dd>0507-1398-7125</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="c_5 c_m_12">
+                    <div class="cafe2_img">
+                        <img src="midnightcafe2.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>CAFE ARCHIVE</li>
+            <li>Find your favorite cafe mood</li>
+            <li>웹프로그래밍 12주차 과제</li>
+            <li>202331753 경제학과 이도겸</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

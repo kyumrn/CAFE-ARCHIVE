@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAFE ARCHIVE</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+[class*="c_"] {
+    float: left;
+    padding: 10px;
+}
+[class*="c_"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    .c_m_1 {width: 8.33%;}
+    .c_m_2 {width: 16.66%;}
+    .c_m_3 {width: 25%;}
+    .c_m_4 {width: 33.33%;}
+    .c_m_5 {width: 41.66%;}
+    .c_m_6 {width: 50%;}
+    .c_m_7 {width: 58.33%;}
+    .c_m_8 {width: 66.66%;}
+    .c_m_9 {width: 75%;}
+    .c_m_10 {width: 83.33%;}
+    .c_m_11 {width: 91.66%;}
+    .c_m_12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .c_1 {width: 8.33%;}
+    .c_2 {width: 16.66%;}
+    .c_3 {width: 25%;}
+    .c_4 {width: 33.33%;}
+    .c_5 {width: 41.66%;}
+    .c_6 {width: 50%;}
+    .c_7 {width: 58.33%;}
+    .c_8 {width: 66.66%;}
+    .c_9 {width: 75%;}
+    .c_10 {width: 83.33%;}
+    .c_11 {width: 91.66%;}
+    .c_12 {width: 100%;}
+}
+@media only screen and (max-width: 768px) {
+    .cafe_img_box,
+    .cafe_intro_box,
+    .cafe_info_box {
+        width: 100% !important;
+        float: none !important;
+    }
+}
+body{
+    font-family: "맑은 고딕";
+    background-color:#d8b998;
+    color:#222;
+    padding:20px;
+}
+#wrap{
+    max-width: 1500px;
+    margin:auto;
+}
+header{
+    border: double 12px #7d5a44;
+    padding:10px;
+    margin-bottom:10px;
+    background-color:#ede0d2;
+    border-radius: 15px;
+}
+header img{
+    padding-bottom: 30px;
+}
+
+header nav ul {
+    list-style:none;
+    text-align:center;
+    padding-bottom: 20px;
+}
+
+header nav li {
+    display:inline;
+    font-size:28px;
+    margin:0 20px;
+}
+header nav a{
+    text-decoration:none;
+    color:#4a342a;
+}
+header nav a:hover{
+    color:#b8894f;
+}
+.active{
+    background: linear-gradient(to top, #e2ceb3 50%, transparent 50%);
+    padding: 0 6px;
+}
+
+main{
+    border: double 12px #7d5a44;
+    min-height:500px;
+    padding:30px;
+    background-color:#fff5eb;
+    border-radius: 15px;
+    overflow: hidden; 
+}
+.cafe_list_container {
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff5eb; 
+}
+.cafe_card {
+    overflow: hidden; 
+    padding: 40px 0;          
+    border-bottom: 2px dashed #7d5a44; 
+}
+.cafe_card:last-child {
+    border-bottom: none;
+}
+.cafe_img_box {
+    width: 30%;  
+    float: left;           
+}
+.cafe_intro_box {
+    width: 40%;
+    float: left;              
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.cafe_card.reverse .cafe_img_box,
+.cafe_card.reverse .cafe_intro_box,
+.cafe_card.reverse .cafe_info_box {
+    float: right;
+    text-align: right;
+}
+.cafe_name {
+    font-size: 35px;
+    font-weight: 700;
+    color: #4E3629;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.cafe_desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #6e5445;
+    margin-bottom: 25px;   
+}
+.cafe_signature {
+    font-size: 14px;
+    color: #915F38;
+    margin-bottom: 25px;            
+}
+.cafe_info_box {
+    width: 25%;           
+    float: left;      
+    box-sizing: border-box;
+}
+.info_title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #4E3629;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.info_details {
+    margin: 0;
+    padding: 0;
+}
+.info_details dt {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4E3629;
+    float: left;         
+    clear: left;       
+    width: 75px;       
+    margin-bottom: 8px;
+}
+.info_details dd {
+    font-size: 14px;
+    color: #6e5445;
+    margin-left: 75px;       
+    margin-bottom: 8px;
+}
+footer{
+    color: #715345;
+    border:none;
+    margin-top:10px;
+    padding:20px;
+    background-color:#caac8c;
+    border-radius: 15px;
+}
+
+footer ul{
+    list-style-type: none;
+    font-size:14px;
+    line-height:1.7;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <header class="c_m_12 c_12">
+        <a href="index.html"><img src="logo.jpg"></a>
+        <nav>
+            <ul>
+                <li><a href="mood.html">MOOD</a></li>
+                <li>|</li>
+                <li><a href="view.html">VIEW</a></li>
+                <li>|</li>
+                <li class="active"><a href="dessert.html">DESSERT</a></li>
+                <li>|</li>
+                <li><a href="unique.html">UNIQUE</a></li>
+                <li>|</li>
+                <li><a href="midnight.html">MIDNIGHT</a></li>
+            </ul>
+        </nav>
+    </header>
+<main class="c_m_12 c_12">
+      <div class="cafe_list_container">
+    <div class="cafe_card">
+        <div class="cafe_img_box">
+            <img src="dessert1.jpg">
+        </div>
+        <div class="cafe_intro_box">
+            <h2 class="cafe_name">플루밍</h2>
+            <p class="cafe_desc">다양한 형태의 자두 음료와 플루밍의 색을 지닌 귀여운 디저트로 특별함 경험을 선사하는 카페</p>
+            <p class="cafe_signature"><strong>시그니처 메뉴 :</strong> 하트롤, 푸딩 아라모드 롤케이크</p>
+        </div>
+        <div class="cafe_info_box">
+            <h3 class="info_title">카페 정보</h3>
+            <dl class="info_details">
+                <dt>영업시간 :</dt><dd>12:00 - 20:00 (19:00 라스트오더) (매주 화요일 정기휴무)</dd>
+                <dt>위치 :</dt><dd>서울 마포구 연남로13길 9 1층 101호</dd>
+                <dt>주차 :</dt><dd>불가</dd>
+                <dt>전화번호 :</dt><dd>02-2039-0430</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cafe_card reverse">
+        <div class="cafe_img_box">
+            <img src="dessert2.jpg">
+        </div>
+        <div class="cafe_intro_box">
+            <h2 class="cafe_name">앤앤드</h2>
+            <p class="cafe_desc">디저트를 직접 제조하는 수플레팬케이크전문점이며, 맛과 서비스를 확신하는 디저트카페</p>
+            <p class="cafe_signature"><strong>시그니처 메뉴 :</strong> 티라미수 수플레 팬케이크, 메이플 플레인 수플레 팬케이크</p>
+        </div>
+        <div class="cafe_info_box">
+            <h3 class="info_title">카페 정보</h3>
+            <dl class="info_details">
+                <dt>영업시간 :</dt><dd>13:00 - 다음 날 03:00</dd>
+                <dt>위치 :</dt><dd>경기 의정부시 태평로73번길 52 지상 1층 (의정부동)</dd>
+                <dt>주차 :</dt><dd>불가</dd>
+                <dt>전화번호 :</dt><dd>0507-1360-9674</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cafe_card">
+        <div class="cafe_img_box">
+            <img src="dessert3.jpg">
+        </div>
+        <div class="cafe_intro_box">
+            <h2 class="cafe_name">스프링스프링</h2>
+            <p class="cafe_desc">순간의 설렘과 생기를 담아 지친 일상 속 작은 휴식과 따뜻한 위로를 전하는 브런치 카페 스프링스프링을 만들었습니다.</p>
+            <p class="cafe_signature"><strong>시그니처 메뉴 :</strong> Sugar TOK latte, Strawberry cheeses</p>
+        </div>
+        <div class="cafe_info_box">
+            <h3 class="info_title">카페 정보</h3>
+            <dl class="info_details">
+                <dt>영업시간 :</dt><dd>09:30 - 18:00 (17:30 라스트오더)</dd>
+                <dt>위치 :</dt><dd>경기 성남시 수정구 창곡동 557-2</dd>
+                <dt>주차 :</dt><dd>후문에 주차 가능 (무료)</dd>
+                <dt>전화번호 :</dt><dd>0507-1392-9799</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+</main>
+    <footer class="c_m_12 c_12">
+        <ul>
+            <li>CAFE ARCHIVE</li>
+            <li>Find your favorite cafe mood</li>
+            <li>웹프로그래밍 12주차 과제</li>
+            <li>202331753 경제학과 이도겸</li>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>
